@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD1A1D9D26E237D300565838 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A1D9C26E237D300565838 /* Menu.swift */; };
+		DD1A1D9F26E2383600565838 /* ContactSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A1D9E26E2383600565838 /* ContactSupport.swift */; };
+		DD1A1DA126E238A500565838 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A1DA026E238A500565838 /* Keyboard.swift */; };
+		DD1A1DA326E23BA800565838 /* ContacSupportProblem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A1DA226E23BA800565838 /* ContacSupportProblem.swift */; };
+		DD1A1DA526E2721E00565838 /* ViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A1DA426E2721E00565838 /* ViewExt.swift */; };
 		DD665FB726E120CB00ACEB54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD665FB626E120CB00ACEB54 /* Assets.xcassets */; };
-		DD665FBA26E12B2F00ACEB54 /* ButtonExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD665FB926E12B2F00ACEB54 /* ButtonExt.swift */; };
 		DD665FBC26E12B8200ACEB54 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD665FBB26E12B8200ACEB54 /* LaunchViewController.swift */; };
 		DD9A24AD26E102960056F3D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9A24AC26E102960056F3D1 /* AppDelegate.swift */; };
 		DD9A24AF26E102960056F3D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9A24AE26E102960056F3D1 /* SceneDelegate.swift */; };
@@ -20,8 +24,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD1A1D9C26E237D300565838 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		DD1A1D9E26E2383600565838 /* ContactSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactSupport.swift; sourceTree = "<group>"; };
+		DD1A1DA026E238A500565838 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
+		DD1A1DA226E23BA800565838 /* ContacSupportProblem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContacSupportProblem.swift; sourceTree = "<group>"; };
+		DD1A1DA426E2721E00565838 /* ViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExt.swift; sourceTree = "<group>"; };
 		DD665FB626E120CB00ACEB54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DD665FB926E12B2F00ACEB54 /* ButtonExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExt.swift; sourceTree = "<group>"; };
 		DD665FBB26E12B8200ACEB54 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		DD9A24A926E102960056F3D1 /* VPNAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VPNAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD9A24AC26E102960056F3D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +56,8 @@
 		DD665FB826E12B2300ACEB54 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				DD665FB926E12B2F00ACEB54 /* ButtonExt.swift */,
+				DD1A1DA026E238A500565838 /* Keyboard.swift */,
+				DD1A1DA426E2721E00565838 /* ViewExt.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -99,6 +108,9 @@
 			children = (
 				DD9A24C726E11DDA0056F3D1 /* Home.swift */,
 				DD665FBB26E12B8200ACEB54 /* LaunchViewController.swift */,
+				DD1A1D9C26E237D300565838 /* Menu.swift */,
+				DD1A1D9E26E2383600565838 /* ContactSupport.swift */,
+				DD1A1DA226E23BA800565838 /* ContacSupportProblem.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -174,12 +186,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD9A24B726E102960056F3D1 /* VPNAPP.xcdatamodeld in Sources */,
+				DD1A1DA326E23BA800565838 /* ContacSupportProblem.swift in Sources */,
 				DD9A24B126E102960056F3D1 /* ViewController.swift in Sources */,
+				DD1A1DA126E238A500565838 /* Keyboard.swift in Sources */,
+				DD1A1DA526E2721E00565838 /* ViewExt.swift in Sources */,
+				DD1A1D9D26E237D300565838 /* Menu.swift in Sources */,
 				DD9A24C826E11DDA0056F3D1 /* Home.swift in Sources */,
 				DD9A24AD26E102960056F3D1 /* AppDelegate.swift in Sources */,
 				DD9A24AF26E102960056F3D1 /* SceneDelegate.swift in Sources */,
 				DD665FBC26E12B8200ACEB54 /* LaunchViewController.swift in Sources */,
-				DD665FBA26E12B2F00ACEB54 /* ButtonExt.swift in Sources */,
+				DD1A1D9F26E2383600565838 /* ContactSupport.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2074,16 +2074,25 @@
                             <constraint firstItem="kgu-ci-NuT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wze-j8-GSU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CKP-b7-q48" secondAttribute="trailing" id="xcq-Gg-uZR"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="kgu-ci-NuT"/>
+                                <exclude reference="QaJ-a8-yYi"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="rln-y6-vXS"/>
                     <connections>
                         <outlet property="accountView" destination="5lV-bd-qyd" id="Ieq-bA-35q"/>
                         <outlet property="backgroundView" destination="kgu-ci-NuT" id="KJ5-lJ-JFr"/>
+                        <outlet property="byWhoLabel" destination="vtB-8Z-PkX" id="ymA-tF-nib"/>
+                        <outlet property="expiryLabel" destination="O5T-8e-lwi" id="baM-6H-p9c"/>
                         <outlet property="helpCenterView" destination="czd-J8-ADd" id="1FL-Um-oAg"/>
                         <outlet property="legalView" destination="Xqq-OG-HFF" id="ayA-nL-7UG"/>
                         <outlet property="optionView" destination="QiP-WV-ps7" id="8DT-wz-w1i"/>
                         <outlet property="passwordTextField" destination="5st-CY-GOG" id="6gf-BC-88H"/>
                         <outlet property="pinCodeTextField" destination="Bxc-iN-rLD" id="va0-G7-aan"/>
+                        <outlet property="pinLabel" destination="Nlz-bM-CHn" id="xuJ-AW-e29"/>
                         <outlet property="serversView" destination="QaJ-a8-yYi" id="0nZ-n1-lcH"/>
                         <outlet property="updateView" destination="uSS-Ue-6U7" id="2p0-kD-QNc"/>
                     </connections>

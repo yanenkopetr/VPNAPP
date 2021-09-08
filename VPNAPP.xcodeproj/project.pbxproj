@@ -3,17 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6213F8A8F2D47E3FC061AF7 /* Pods_VPNAPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC84A5786EBD76E414EF01F /* Pods_VPNAPP.framework */; };
 		DD1A1D9D26E237D300565838 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A1D9C26E237D300565838 /* Menu.swift */; };
 		DD1A1D9F26E2383600565838 /* ContactSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A1D9E26E2383600565838 /* ContactSupport.swift */; };
 		DD1A1DA126E238A500565838 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A1DA026E238A500565838 /* Keyboard.swift */; };
 		DD1A1DA326E23BA800565838 /* ContacSupportProblem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A1DA226E23BA800565838 /* ContacSupportProblem.swift */; };
 		DD1A1DA526E2721E00565838 /* ViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A1DA426E2721E00565838 /* ViewExt.swift */; };
+		DD2F3EAA26E8E1DB00B3031C /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F3EA926E8E1DB00B3031C /* Request.swift */; };
+		DD2F3EAC26E8E4D400B3031C /* IPreferance.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F3EAB26E8E4D400B3031C /* IPreferance.swift */; };
+		DD2F3EAE26E8E4F600B3031C /* AccountUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F3EAD26E8E4F600B3031C /* AccountUser.swift */; };
+		DD2F3EB026E8E59300B3031C /* ServerResponce.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F3EAF26E8E59300B3031C /* ServerResponce.swift */; };
+		DD2F3EB226E8E6FD00B3031C /* AccountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F3EB126E8E6FD00B3031C /* AccountResponse.swift */; };
+		DD2F3EB426E8E7A400B3031C /* ServerDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F3EB326E8E7A400B3031C /* ServerDetailResponse.swift */; };
+		DD2F3EB626E8E82B00B3031C /* UpdateDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F3EB526E8E82B00B3031C /* UpdateDetailResponse.swift */; };
+		DD2F3EB826E8E87700B3031C /* UpdateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2F3EB726E8E87700B3031C /* UpdateResponse.swift */; };
 		DD665FB726E120CB00ACEB54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD665FB626E120CB00ACEB54 /* Assets.xcassets */; };
 		DD665FBC26E12B8200ACEB54 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD665FBB26E12B8200ACEB54 /* LaunchViewController.swift */; };
+		DD6CC1C026E8EE0400245173 /* ApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6CC1BF26E8EE0400245173 /* ApiModel.swift */; };
+		DD6CC1C226E8EE3200245173 /* String+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6CC1C126E8EE3200245173 /* String+ext.swift */; };
 		DD9A24AD26E102960056F3D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9A24AC26E102960056F3D1 /* AppDelegate.swift */; };
 		DD9A24AF26E102960056F3D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9A24AE26E102960056F3D1 /* SceneDelegate.swift */; };
 		DD9A24B126E102960056F3D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9A24B026E102960056F3D1 /* ViewController.swift */; };
@@ -24,13 +35,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C3D8BA4B8EF6DB5EE4A68D2 /* Pods-VPNAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VPNAPP.release.xcconfig"; path = "Target Support Files/Pods-VPNAPP/Pods-VPNAPP.release.xcconfig"; sourceTree = "<group>"; };
+		AFC84A5786EBD76E414EF01F /* Pods_VPNAPP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VPNAPP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD1A1D9C26E237D300565838 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		DD1A1D9E26E2383600565838 /* ContactSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactSupport.swift; sourceTree = "<group>"; };
 		DD1A1DA026E238A500565838 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 		DD1A1DA226E23BA800565838 /* ContacSupportProblem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContacSupportProblem.swift; sourceTree = "<group>"; };
 		DD1A1DA426E2721E00565838 /* ViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExt.swift; sourceTree = "<group>"; };
+		DD2F3EA926E8E1DB00B3031C /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		DD2F3EAB26E8E4D400B3031C /* IPreferance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPreferance.swift; sourceTree = "<group>"; };
+		DD2F3EAD26E8E4F600B3031C /* AccountUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountUser.swift; sourceTree = "<group>"; };
+		DD2F3EAF26E8E59300B3031C /* ServerResponce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerResponce.swift; sourceTree = "<group>"; };
+		DD2F3EB126E8E6FD00B3031C /* AccountResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountResponse.swift; sourceTree = "<group>"; };
+		DD2F3EB326E8E7A400B3031C /* ServerDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerDetailResponse.swift; sourceTree = "<group>"; };
+		DD2F3EB526E8E82B00B3031C /* UpdateDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateDetailResponse.swift; sourceTree = "<group>"; };
+		DD2F3EB726E8E87700B3031C /* UpdateResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateResponse.swift; sourceTree = "<group>"; };
 		DD665FB626E120CB00ACEB54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD665FBB26E12B8200ACEB54 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		DD6CC1BF26E8EE0400245173 /* ApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiModel.swift; sourceTree = "<group>"; };
+		DD6CC1C126E8EE3200245173 /* String+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ext.swift"; sourceTree = "<group>"; };
 		DD9A24A926E102960056F3D1 /* VPNAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VPNAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD9A24AC26E102960056F3D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD9A24AE26E102960056F3D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +63,7 @@
 		DD9A24BB26E102970056F3D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD9A24BD26E102970056F3D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD9A24C726E11DDA0056F3D1 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Home.swift; path = ../../../Home.swift; sourceTree = "<group>"; };
+		E8381BC3919F00B876CE4EDA /* Pods-VPNAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VPNAPP.debug.xcconfig"; path = "Target Support Files/Pods-VPNAPP/Pods-VPNAPP.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,19 +71,60 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6213F8A8F2D47E3FC061AF7 /* Pods_VPNAPP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A291A0EA30614DC5692A1E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8381BC3919F00B876CE4EDA /* Pods-VPNAPP.debug.xcconfig */,
+				7C3D8BA4B8EF6DB5EE4A68D2 /* Pods-VPNAPP.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DD2F3EA726E8E1BA00B3031C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DD2F3EAB26E8E4D400B3031C /* IPreferance.swift */,
+				DD2F3EAD26E8E4F600B3031C /* AccountUser.swift */,
+				DD2F3EAF26E8E59300B3031C /* ServerResponce.swift */,
+				DD2F3EB126E8E6FD00B3031C /* AccountResponse.swift */,
+				DD2F3EB326E8E7A400B3031C /* ServerDetailResponse.swift */,
+				DD2F3EB526E8E82B00B3031C /* UpdateDetailResponse.swift */,
+				DD2F3EB726E8E87700B3031C /* UpdateResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DD2F3EA826E8E1CA00B3031C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DD2F3EA926E8E1DB00B3031C /* Request.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		DD665FB826E12B2300ACEB54 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				DD1A1DA026E238A500565838 /* Keyboard.swift */,
 				DD1A1DA426E2721E00565838 /* ViewExt.swift */,
+				DD6CC1C126E8EE3200245173 /* String+ext.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		DD6CC1BE26E8ED4F00245173 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DD6CC1BF26E8EE0400245173 /* ApiModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		DD9A24A026E102950056F3D1 = {
@@ -67,6 +132,8 @@
 			children = (
 				DD9A24AB26E102960056F3D1 /* VPNAPP */,
 				DD9A24AA26E102960056F3D1 /* Products */,
+				7A291A0EA30614DC5692A1E0 /* Pods */,
+				FFA299CCCC43DD23591EDE3F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +148,9 @@
 		DD9A24AB26E102960056F3D1 /* VPNAPP */ = {
 			isa = PBXGroup;
 			children = (
+				DD6CC1BE26E8ED4F00245173 /* ViewModel */,
+				DD2F3EA826E8E1CA00B3031C /* Service */,
+				DD2F3EA726E8E1BA00B3031C /* Model */,
 				DD665FB826E12B2300ACEB54 /* Extension */,
 				DD9A24C326E105260056F3D1 /* View */,
 				DD9A24C626E11DBE0056F3D1 /* ViewController */,
@@ -115,6 +185,14 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		FFA299CCCC43DD23591EDE3F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFC84A5786EBD76E414EF01F /* Pods_VPNAPP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,9 +200,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD9A24C026E102970056F3D1 /* Build configuration list for PBXNativeTarget "VPNAPP" */;
 			buildPhases = (
+				0832B84446A0725822BEA6BB /* [CP] Check Pods Manifest.lock */,
 				DD9A24A526E102960056F3D1 /* Sources */,
 				DD9A24A626E102960056F3D1 /* Frameworks */,
 				DD9A24A726E102960056F3D1 /* Resources */,
+				1D784568C29ADCB799FE2562 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -180,6 +260,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0832B84446A0725822BEA6BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VPNAPP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1D784568C29ADCB799FE2562 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VPNAPP/Pods-VPNAPP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VPNAPP/Pods-VPNAPP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VPNAPP/Pods-VPNAPP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DD9A24A526E102960056F3D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -188,11 +310,21 @@
 				DD9A24B726E102960056F3D1 /* VPNAPP.xcdatamodeld in Sources */,
 				DD1A1DA326E23BA800565838 /* ContacSupportProblem.swift in Sources */,
 				DD9A24B126E102960056F3D1 /* ViewController.swift in Sources */,
+				DD2F3EB426E8E7A400B3031C /* ServerDetailResponse.swift in Sources */,
+				DD6CC1C026E8EE0400245173 /* ApiModel.swift in Sources */,
 				DD1A1DA126E238A500565838 /* Keyboard.swift in Sources */,
 				DD1A1DA526E2721E00565838 /* ViewExt.swift in Sources */,
+				DD6CC1C226E8EE3200245173 /* String+ext.swift in Sources */,
+				DD2F3EB826E8E87700B3031C /* UpdateResponse.swift in Sources */,
+				DD2F3EB626E8E82B00B3031C /* UpdateDetailResponse.swift in Sources */,
+				DD2F3EAC26E8E4D400B3031C /* IPreferance.swift in Sources */,
 				DD1A1D9D26E237D300565838 /* Menu.swift in Sources */,
+				DD2F3EAA26E8E1DB00B3031C /* Request.swift in Sources */,
 				DD9A24C826E11DDA0056F3D1 /* Home.swift in Sources */,
 				DD9A24AD26E102960056F3D1 /* AppDelegate.swift in Sources */,
+				DD2F3EAE26E8E4F600B3031C /* AccountUser.swift in Sources */,
+				DD2F3EB026E8E59300B3031C /* ServerResponce.swift in Sources */,
+				DD2F3EB226E8E6FD00B3031C /* AccountResponse.swift in Sources */,
 				DD9A24AF26E102960056F3D1 /* SceneDelegate.swift in Sources */,
 				DD665FBC26E12B8200ACEB54 /* LaunchViewController.swift in Sources */,
 				DD1A1D9F26E2383600565838 /* ContactSupport.swift in Sources */,
@@ -339,6 +471,7 @@
 		};
 		DD9A24C126E102970056F3D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8381BC3919F00B876CE4EDA /* Pods-VPNAPP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -358,6 +491,7 @@
 		};
 		DD9A24C226E102970056F3D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C3D8BA4B8EF6DB5EE4A68D2 /* Pods-VPNAPP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

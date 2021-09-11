@@ -7,30 +7,6 @@
 
 import Foundation
 
-//class AccountResponse:Codable {
-//    var name : String
-//    var link : String
-//    var subscriptions : [SubscriptionResponse]
-//    
-//    enum CodingKeys: String, CodingKey {
-//        case name = "reseller_name"
-//        case link = "top_up_link"
-//        case subscriptions = "subscription_details"
-//    }
-//}
-//
-//class SubscriptionResponse: Codable {
-//    var name : String?
-//    var status : String?
-//    var expiry : String?
-//    
-//    enum CodingKeys: String, CodingKey {
-//        case name = "subscription_name"
-//        case status = "status"
-//        case expiry = "expiry"
-//    }
-//}
-
 struct AccountResponse: Codable {
     let resellerName: String?
     let subscriptionDetails: [SubscriptionDetail]?

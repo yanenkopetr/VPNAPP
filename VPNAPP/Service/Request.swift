@@ -65,4 +65,37 @@ public class RequestObservable {
             }
         }
     }
+    
+    public func call(request: URLRequest)
+    -> Observable<Any> {
+        
+        return Observable.create { observer in
+
+            let task = self.urlSession.dataTask(with: request) { (data,
+                                                                  response, error) in
+                if let httpResponse = response as? HTTPURLResponse{
+                    let statusCode = httpResponse.statusCode
+                    
+                    if (200...399).contains(statusCode) {
+                        observer.onNext(AnyObserver<Any>.self)
+                    }
+                    else {
+                        if (error != nil) {
+                            observer.onError(error!)
+                        }
+                        else {
+                            observer.onNext(AnyObserver<Any>.self)
+                        }
+                    }
+                }
+
+                observer.onCompleted()
+            }
+            task.resume()
+
+            return Disposables.create {
+                task.cancel()
+            }
+        }
+    }
 }

@@ -279,9 +279,6 @@
                                                                 <color key="value" red="0.36470588240000001" green="0.40784313729999999" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <action selector="showHideServicesView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EUf-Cu-glN"/>
-                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -364,9 +361,6 @@
                                                                             <constraint firstAttribute="width" constant="30" id="eZK-Kk-Xqu"/>
                                                                         </constraints>
                                                                         <state key="normal" image="arrow_down"/>
-                                                                        <connections>
-                                                                            <action selector="showHideHelpCenter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cDA-J9-rqE"/>
-                                                                        </connections>
                                                                     </button>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HZf-so-EhV">
                                                                         <rect key="frame" x="0.0" y="39" width="332" height="1"/>
@@ -551,9 +545,6 @@
                                                                             <constraint firstAttribute="width" constant="30" id="x7e-z4-3O0"/>
                                                                         </constraints>
                                                                         <state key="normal" image="arrow_down"/>
-                                                                        <connections>
-                                                                            <action selector="showHideLegal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cmM-yc-83c"/>
-                                                                        </connections>
                                                                     </button>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xSZ-8z-awi">
                                                                         <rect key="frame" x="0.0" y="39" width="332" height="1"/>
@@ -1727,9 +1718,6 @@
                                                     </stackView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yi3-gq-3DK">
                                                         <rect key="frame" x="0.0" y="0.0" width="138" height="60"/>
-                                                        <connections>
-                                                            <action selector="showHideAccountView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZnI-fC-gSP"/>
-                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.074509803920000006" green="0.20000000000000001" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1780,9 +1768,6 @@
                                                     </stackView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kmy-Qe-gDu">
                                                         <rect key="frame" x="0.0" y="0.0" width="138" height="60"/>
-                                                        <connections>
-                                                            <action selector="showHideupdateView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jpf-ye-L0H"/>
-                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.074509803920000006" green="0.20000000000000001" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1833,9 +1818,6 @@
                                                     </stackView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pw2-Jb-hBh">
                                                         <rect key="frame" x="0.0" y="0.0" width="138" height="60"/>
-                                                        <connections>
-                                                            <action selector="showHideOptonView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CBG-Lb-B3w"/>
-                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.074509803920000006" green="0.20000000000000001" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1996,6 +1978,7 @@
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <constraints>
                                             <constraint firstItem="weF-Zt-2v1" firstAttribute="top" secondItem="wN3-Qb-Era" secondAttribute="top" constant="20" id="8yM-yw-Z1j"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="weF-Zt-2v1" secondAttribute="trailing" constant="20" symbolic="YES" id="EqK-x0-31J"/>
                                             <constraint firstAttribute="trailing" secondItem="K2o-Ds-7MU" secondAttribute="trailing" constant="10" id="HZa-no-brM"/>
                                             <constraint firstItem="K2o-Ds-7MU" firstAttribute="top" secondItem="weF-Zt-2v1" secondAttribute="bottom" constant="10" id="euw-H4-g6E"/>
                                             <constraint firstItem="weF-Zt-2v1" firstAttribute="leading" secondItem="wN3-Qb-Era" secondAttribute="leading" constant="20" id="hvX-Po-dEh"/>
@@ -2074,27 +2057,31 @@
                             <constraint firstItem="kgu-ci-NuT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wze-j8-GSU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CKP-b7-q48" secondAttribute="trailing" id="xcq-Gg-uZR"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="kgu-ci-NuT"/>
-                                <exclude reference="QaJ-a8-yYi"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="rln-y6-vXS"/>
                     <connections>
                         <outlet property="accountView" destination="5lV-bd-qyd" id="Ieq-bA-35q"/>
+                        <outlet property="accountViewButton" destination="yi3-gq-3DK" id="u9z-wx-jl9"/>
+                        <outlet property="autoImageView" destination="bwk-Tq-Bor" id="1p3-nn-YxA"/>
+                        <outlet property="autoLocationLabel" destination="Qlt-WY-RfJ" id="nGL-74-vIv"/>
+                        <outlet property="autoNameLabel" destination="2Bb-hI-Myc" id="oTf-Yf-hmK"/>
                         <outlet property="backgroundView" destination="kgu-ci-NuT" id="KJ5-lJ-JFr"/>
                         <outlet property="byWhoLabel" destination="vtB-8Z-PkX" id="ymA-tF-nib"/>
                         <outlet property="expiryLabel" destination="O5T-8e-lwi" id="baM-6H-p9c"/>
+                        <outlet property="helpCenterButton" destination="3zj-Is-ikF" id="QAO-V7-C8T"/>
                         <outlet property="helpCenterView" destination="czd-J8-ADd" id="1FL-Um-oAg"/>
+                        <outlet property="legalButton" destination="G3K-BM-3Ew" id="BCw-qa-6d5"/>
                         <outlet property="legalView" destination="Xqq-OG-HFF" id="ayA-nL-7UG"/>
                         <outlet property="optionView" destination="QiP-WV-ps7" id="8DT-wz-w1i"/>
+                        <outlet property="optionViewButton" destination="Pw2-Jb-hBh" id="e0H-gJ-Q0w"/>
                         <outlet property="passwordTextField" destination="5st-CY-GOG" id="6gf-BC-88H"/>
                         <outlet property="pinCodeTextField" destination="Bxc-iN-rLD" id="va0-G7-aan"/>
                         <outlet property="pinLabel" destination="Nlz-bM-CHn" id="xuJ-AW-e29"/>
+                        <outlet property="serversTableView" destination="gOv-50-ZAW" id="O9U-VA-EqP"/>
                         <outlet property="serversView" destination="QaJ-a8-yYi" id="0nZ-n1-lcH"/>
+                        <outlet property="serversViewButton" destination="gcX-r3-1UT" id="ryk-qJ-itr"/>
                         <outlet property="updateView" destination="uSS-Ue-6U7" id="2p0-kD-QNc"/>
+                        <outlet property="updateViewButton" destination="Kmy-Qe-gDu" id="c3v-Z5-Bvx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -2498,10 +2485,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFa-5C-Lnp">
-                                <rect key="frame" x="82" y="772" width="250" height="40"/>
+                                <rect key="frame" x="50" y="772" width="314" height="40"/>
                                 <color key="backgroundColor" red="0.0" green="0.27843137254901962" blue="1" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="PB6-tG-o3Q"/>
                                     <constraint firstAttribute="height" constant="40" id="QE4-YK-hLa"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
@@ -2562,10 +2548,11 @@
                             <constraint firstItem="AVb-EN-rqf" firstAttribute="top" secondItem="C0E-uW-CyH" secondAttribute="bottom" constant="10" id="34m-aJ-R92"/>
                             <constraint firstItem="5vf-Bd-CCG" firstAttribute="bottom" secondItem="qFa-5C-Lnp" secondAttribute="bottom" constant="50" id="65s-Kf-23s"/>
                             <constraint firstItem="C0E-uW-CyH" firstAttribute="leading" secondItem="5vf-Bd-CCG" secondAttribute="leading" constant="20" id="6fn-BI-yyU"/>
+                            <constraint firstItem="5vf-Bd-CCG" firstAttribute="trailing" secondItem="qFa-5C-Lnp" secondAttribute="trailing" constant="50" id="Io4-Im-OV7"/>
                             <constraint firstItem="5vf-Bd-CCG" firstAttribute="trailing" secondItem="AVb-EN-rqf" secondAttribute="trailing" constant="20" id="OMP-5R-9vR"/>
+                            <constraint firstItem="qFa-5C-Lnp" firstAttribute="leading" secondItem="5vf-Bd-CCG" secondAttribute="leading" constant="50" id="UFi-F7-PR2"/>
                             <constraint firstItem="C0E-uW-CyH" firstAttribute="top" secondItem="5vf-Bd-CCG" secondAttribute="top" constant="20" id="ZbY-HV-67R"/>
                             <constraint firstItem="5vf-Bd-CCG" firstAttribute="trailing" secondItem="C0E-uW-CyH" secondAttribute="trailing" constant="20" id="hvx-6Z-qpM"/>
-                            <constraint firstItem="qFa-5C-Lnp" firstAttribute="centerX" secondItem="5vf-Bd-CCG" secondAttribute="centerX" id="mxW-jJ-hKa"/>
                             <constraint firstItem="AVb-EN-rqf" firstAttribute="leading" secondItem="5vf-Bd-CCG" secondAttribute="leading" constant="20" id="nXH-ji-LbL"/>
                             <constraint firstItem="qFa-5C-Lnp" firstAttribute="top" secondItem="AVb-EN-rqf" secondAttribute="bottom" constant="10" id="uBT-bM-HH6"/>
                         </constraints>

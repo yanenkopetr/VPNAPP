@@ -13,5 +13,5 @@ struct IPreference {
     // save and get account info from local data
     static var accountUser : AccountUser?
     // save and get server from local data
-    static var server : ServerResponse?
+    static var server : ServerDetailResponse?
 }

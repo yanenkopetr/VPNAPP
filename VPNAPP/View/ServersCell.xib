@@ -79,7 +79,7 @@
                 <outlet property="serverName" destination="fTq-DR-Lcy" id="2e3-k4-9RP"/>
                 <outlet property="serverSubName" destination="anl-I7-b8s" id="Zgn-Wk-5Zr"/>
             </connections>
-            <point key="canvasLocation" x="137.68115942028987" y="158.03571428571428"/>
+            <point key="canvasLocation" x="136" y="144"/>
         </tableViewCell>
     </objects>
     <resources>

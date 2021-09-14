@@ -6,13 +6,19 @@
 //
 
 import UIKit
+import RxSwift
 
 class ContacSupportProblem: UIViewController {
     
     var type:String?
     var placeHolder:String!
     
+    var disposeBag = DisposeBag()
+    
+    let client = APIClient.shared
+    
     @IBOutlet weak var messageTextField:UITextView!
+    @IBOutlet weak var sendMessage:UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,17 +45,19 @@ class ContacSupportProblem: UIViewController {
             messageTextField.text = placeHolder
             messageTextField.textColor = UIColor.lightGray
         }
+        
+        setActions()
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func setActions() {
+        sendMessage.rx.tap.subscribe(onNext: {
+            if let message = self.messageTextField.text, !message.isEmpty {
+                self.client.sendEmail(text: message).subscribe(onNext: { response in
+                    self._back(self.sendMessage)
+                }).disposed(by: self.disposeBag)
+            }
+        }).disposed(by: self.disposeBag)
     }
-    */
 
 }
 extension ContacSupportProblem: UITextViewDelegate {

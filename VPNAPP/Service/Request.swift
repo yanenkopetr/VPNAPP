@@ -52,7 +52,10 @@ public class RequestObservable {
                         }
                         
                     } catch {
-                        
+                        if (ItemModel.self is ServerDetailResponse.Type) {
+                            let data = ServerDetailResponse(serverDetails: nil, subscriptionDetails: nil, resellerName: nil, topUpLink: nil, success: 0, error: 1, message: "Incorrect pin or pass")
+                            observer.onNext(data as! AnyObserver<ItemModel>.Element)
+                        }
                     }
                 }
 

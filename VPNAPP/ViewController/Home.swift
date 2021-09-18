@@ -49,7 +49,8 @@ class Home: UIViewController {
     @IBOutlet weak var selectAutoServerButton:UIButton!
     @IBOutlet weak var connectToThisServerButton:UIButton!
     @IBOutlet weak var connectButton:UIButton!
-    
+    @IBOutlet var optionLinkButtons:[UIButton]!
+
     @IBOutlet var updateIcons:[UIImageView]!
     @IBOutlet weak var autoImageView:UIImageView!
     @IBOutlet weak var autoImageCheckBoxView:UIImageView!
@@ -135,6 +136,85 @@ class Home: UIViewController {
         
         setupActions()
         setupAnimatedView()
+        setupRateButtons()
+    }
+    
+    @IBOutlet weak var rateView:UIView!
+    @IBOutlet var rateButtons:[UIButton]!
+    @IBOutlet var skipRate:UIButton!
+    @IBOutlet var submitRate:UIButton!
+    
+    var rate:Int = 0
+    
+    func setupRateButtons() {
+        rateView.isHidden = true
+        rateButtons.forEach { button in
+            button.setImage(UIImage(named: "star"), for: .normal)
+            button.rx.tap.subscribe(onNext:{
+                self.fillStarts(tag: button.tag)
+            }).disposed(by: self.disposeBag)
+        }
+        
+        skipRate.rx.tap.subscribe(onNext: {
+            self.hideShowRateView()
+        }).disposed(by: self.disposeBag)
+        
+        self.submitRate.rx.tap.subscribe(onNext: {
+            if self.rate != 0 {
+                self.sendRate(rate: self.rate)
+            }
+        }).disposed(by: self.disposeBag)
+        
+    }
+    
+    private func sendRate(rate:Int) {
+        client.sendRating(rating: rate).subscribe(onNext: {
+                    response in
+            self.hideShowRateView()
+        }).disposed(by: self.disposeBag)
+    }
+    
+    func hideShowRateView(){
+        
+        self.rate = 0
+        
+        DispatchQueue.main.async {
+            UIView.animate(withDuration: 0.5) {
+                self.rateView.isHidden = !self.rateView.isHidden
+                self.backgroundView.isHidden = !self.backgroundView.isHidden
+            }
+            
+            self.rateButtons.forEach { button in
+                DispatchQueue.main.async {
+                    button.setImage(UIImage(named: "star"), for: .normal)
+                }
+            }
+        }
+    }
+    
+    func fillStarts(tag:Int) {
+        rate = tag + 1
+        rateButtons.forEach { button in
+            DispatchQueue.main.async {
+                button.setImage(UIImage(named: "star"), for: .normal)
+            }
+        }
+        
+        for i in 0..<rate {
+            DispatchQueue.main.async {
+                self.rateButtons[i].setImage(UIImage(named: "star_filled"), for: .normal)
+            }
+        }
+    }
+    
+    var links = ["https://jailbreakvpn.com/","https://jailbreakvpn.com/","https://jailbreakvpn.com/","https://jailbreakvpn.com/","https://jailbreakvpn.com/","https://jailbreakvpn.com/"]
+        
+    func openOptionLink(tag:Int) {
+        DispatchQueue.main.async {
+            if let url = URL(string: self.links[tag]) {
+                UIApplication.shared.open(url)
+            }
+        }
     }
     
     func setupAnimatedView() {
@@ -237,6 +317,12 @@ class Home: UIViewController {
             }
             
         }).disposed(by: self.disposeBag)
+        
+        optionLinkButtons.forEach { linkButton in
+            linkButton.rx.tap.subscribe(onNext: {
+                self.openOptionLink(tag: linkButton.tag)
+            }).disposed(by: self.disposeBag)
+        }
     }
     
     private func connect() {
@@ -511,6 +597,7 @@ class Home: UIViewController {
                 self.connectButton.setTitle("Connect", for: .normal)
                 self.serversViewButton.setTitle("Select Location", for: .normal)
                 self.mainAnimationImageVIew.image = self.animatedViewImages[0].toImage()
+                self.hideShowRateView()
             }
         }
     }
